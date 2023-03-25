@@ -1,0 +1,176 @@
+.login {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  .left {
+    width: 50%;
+    height: 85%;
+    padding: 8% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .logo {
+      .logo-image {
+        width: 30%;
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    padding: 15% 7.5%;
+    padding-left: 5%;
+    // background-color: purple;
+    form {
+      width: 85%;
+      // display: flex;
+      // flex-direction: column;
+      .input-wrapper {
+        width: 100%;
+        padding: 10px;
+        // background-color: yellow;
+        margin: 5% 0;
+        display: flex;
+        background: #ffffff;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px;
+        align-items: center;
+        input {
+          border: 0;
+          font-family: "Avenir Next" sans-serif;
+          background: transparent;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+
+          color: #545f7d77;
+          width: 100%;
+          padding: 0px 5px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #545f7d77;
+            opacity: 1; /* Firefox */
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #545f7d77;
+          }
+
+          &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #545f7d77;
+          }
+        }
+        // p {
+        //   font-style: normal;
+        //   font-weight: 600;
+        //   font-size: 12px;
+        //   line-height: 16px;
+        //   text-align: center;
+        //   letter-spacing: 0.1em;
+        //   text-transform: uppercase;
+
+        //   color: #39cdcc;
+        // }
+      }
+    }
+    .heading {
+      font-family: "Avenir Next" sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      letter-spacing: normal;
+
+      color: #545f7d;
+      &:hover {
+        cursor: default;
+      }
+    }
+    p {
+      font-family: "Avenir Next" sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height */
+
+      // text-align: right;
+      letter-spacing: 0.1em;
+
+      color: #39cdcc;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    h2 {
+      font-family: "Avenir Next" sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      /* identical to box height */
+
+      letter-spacing: -0.04em;
+
+      color: #213f7d;
+    }
+    .button-wrapper {
+      width: 100%;
+      padding: 5% 0;
+      button {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+        font-family: "Avenir Next";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background: #39cdcc;
+        border: 1px solid #39cdcc;
+        /* 6 */
+        border-radius: 8px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .login {
+    .left {
+      display: none;
+    }
+    .right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // background-color: navajowhite;
+      justify-content: space-between;
+      height: 70%;
+      padding: 35% 7.5%;
+      padding-left: 5%;
+   
+    }
+  }
+}

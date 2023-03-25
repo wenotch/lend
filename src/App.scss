@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family==Work+Sans:wght@400;500&display=swap");
+
+.App {
+  height: 100vh;
+  box-sizing: border-box;
+  .nav {
+    // height: 6%;
+  }
+  .main {
+    // height: 94%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile {
+    display: none;
+    // width: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .App {
+    .desktop {
+      display: none;
+    }
+    .mobile{
+      display: table-cell;
+    }
+  }
+}
